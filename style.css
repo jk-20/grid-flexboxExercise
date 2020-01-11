@@ -1,0 +1,106 @@
+/* cover-image 
+https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg
+ 
+color code 
+ 
+orange #E64A19
+brown  #4E342E */
+
+
+body{
+    margin: auto 0;
+    font-family: 'Sulphur Point', sans-serif;
+
+}
+.container{
+    display: flex;
+    background: url(https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_960_720.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 90vh;
+    color: #f5f5f6;
+
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+   text-transform: capitalize;
+
+   
+    
+}
+
+.main-nav li{
+    padding: .8rem;
+    font-size: 1.2rem;
+
+}
+.main-nav a{
+    text-decoration: none;
+    color: #f5f5f6;
+   
+}
+.main-nav a:hover{
+    color:#E64A19;
+}
+/* .sticky{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    
+} */
+@media only screen and (max-width:600px){
+    .main-nav{
+        font-size: 0.4rem;
+        padding: 0%;
+    }
+}
+@media only screen and (max-width:600px){
+    .container{
+      
+    height: 75vh;
+  
+    }
+}
+.pg{
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+}
+.grid-wrapper{
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-template-rows: 1fr;
+}
+.box{
+    border-radius: 10px;
+    background-color:#E64A19;;
+    padding: 50px;
+    margin: 20px;
+    color: #f5f5f6;
+}
+.box > img{
+   width: 100%;
+   border-radius: 10px;
+   transition: linear all 1s;
+  
+
+}
+.box > img:hover{
+    transform: scale(1.2);
+ }
+ .box a{
+    color: #f5f5f6;
+    padding-right:1.5rem;
+    font-size: 1.5rem;
+ }
+ 
+ 
+ footer{
+     text-align: center;
+     
+ }
